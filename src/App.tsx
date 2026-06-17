@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged, type Unsubscribe } from 'firebase/auth';
 import { auth } from './firebase';
 import { seedDatabase } from './utils/seed';
 import { loadFromCloud } from './utils/sync';
@@ -16,22 +16,26 @@ import Progress from './pages/Progress';
 export default function App() {
   const [ready, setReady] = useState(false);
   const [user, setUser] = useState<any>(null);
-  const [authChecked, setAuthChecked] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      if (firebaseUser) {
-        await loadFromCloud(firebaseUser.uid);
-      }
-      setUser(firebaseUser);
-      setAuthChecked(true);
-      await seedDatabase();
-      setReady(true);
+    let unsubscribe: Unsubscribe | null = null;
+
+    seedDatabase().then(() => {
+      unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+        if (firebaseUser) {
+          await loadFromCloud(firebaseUser.uid);
+        }
+        setUser(firebaseUser);
+        setReady(true);
+      });
     });
-    return unsubscribe;
+
+    return () => {
+      if (unsubscribe) unsubscribe();
+    };
   }, []);
 
-  if (!ready || !authChecked) {
+  if (!ready) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="flex flex-col items-center gap-3">
