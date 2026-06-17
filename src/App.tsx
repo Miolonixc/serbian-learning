@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './firebase';
 import { seedDatabase } from './utils/seed';
+import { loadFromCloud } from './utils/sync';
 import Welcome from './components/Welcome';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -12,19 +15,23 @@ import Progress from './pages/Progress';
 
 export default function App() {
   const [ready, setReady] = useState(false);
-  const [hasUser, setHasUser] = useState(false);
+  const [user, setUser] = useState<any>(null);
+  const [authChecked, setAuthChecked] = useState(false);
 
   useEffect(() => {
-    const name = localStorage.getItem('userName');
-    if (name) setHasUser(true);
-    seedDatabase().then(() => setReady(true));
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser) {
+        await loadFromCloud(firebaseUser.uid);
+      }
+      setUser(firebaseUser);
+      setAuthChecked(true);
+      await seedDatabase();
+      setReady(true);
+    });
+    return unsubscribe;
   }, []);
 
-  const handleWelcome = () => {
-    setHasUser(true);
-  };
-
-  if (!ready) {
+  if (!ready || !authChecked) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="flex flex-col items-center gap-3">
@@ -35,8 +42,8 @@ export default function App() {
     );
   }
 
-  if (!hasUser) {
-    return <Welcome onComplete={handleWelcome} />;
+  if (!user) {
+    return <Welcome onComplete={() => {}} />;
   }
 
   return (

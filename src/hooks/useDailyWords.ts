@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { db, type Word, type WordProgress } from '../db';
+import { auth } from '../firebase';
+import { scheduleSync } from '../utils/sync';
 import { getInitialProgress, calculateSM2, getNextReviewDate } from '../utils/spaced-repetition';
 
 const DAILY_WORDS_COUNT = 8;
@@ -70,6 +72,8 @@ export function useDailyWords() {
       nextReview,
       lastReview: new Date(),
     });
+
+    if (auth.currentUser) scheduleSync(auth.currentUser.uid);
   };
 
   const markLearning = async (wordId: number) => {
@@ -86,6 +90,8 @@ export function useDailyWords() {
       nextReview,
       lastReview: new Date(),
     });
+
+    if (auth.currentUser) scheduleSync(auth.currentUser.uid);
   };
 
   return { words, loading, markKnown, markLearning, refresh: loadWords };

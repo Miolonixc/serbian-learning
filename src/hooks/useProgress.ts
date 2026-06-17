@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { db } from '../db';
+import { auth } from '../firebase';
+import { scheduleSync } from '../utils/sync';
 
 export interface ProgressStats {
   totalWords: number;
@@ -96,6 +98,8 @@ export function useProgress() {
         timeSpent: 0,
       });
     }
+
+    if (auth.currentUser) scheduleSync(auth.currentUser.uid);
     loadStats();
   };
 

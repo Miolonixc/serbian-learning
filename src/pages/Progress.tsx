@@ -1,12 +1,15 @@
 import { useProgress } from '../hooks/useProgress';
+import { auth } from '../firebase';
+import { signOut } from 'firebase/auth';
 
 export default function Progress() {
   const { stats, loading } = useProgress();
-  const name = localStorage.getItem('userName') || 'Ученик';
+  const user = auth.currentUser;
+  const name = user?.displayName || user?.email?.split('@')[0] || 'Ученик';
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
     if (confirm('Выйти из аккаунта?')) {
-      localStorage.removeItem('userName');
+      await signOut(auth);
       window.location.reload();
     }
   };
@@ -30,10 +33,15 @@ export default function Progress() {
           <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-xl font-bold">
             {name.charAt(0).toUpperCase()}
           </div>
-          <div>
+          <div className="flex-1">
             <h1 className="text-lg font-bold">{name}</h1>
-            <p className="text-sm opacity-80">Серия: {stats.streak} дней</p>
+            <p className="text-sm opacity-80">{user?.email}</p>
           </div>
+        </div>
+        <div className="mt-3 flex items-center gap-2">
+          <span className="text-lg">🔥</span>
+          <span className="font-bold">{stats.streak}</span>
+          <span className="text-sm opacity-80">дней подряд</span>
         </div>
       </div>
 
@@ -90,30 +98,8 @@ export default function Progress() {
         </div>
       </div>
 
-      <div className="card">
-        <h2 className="font-bold text-slate-700 mb-3 text-sm">Вся статистика</h2>
-        <div className="space-y-2 text-sm">
-          <div className="flex justify-between">
-            <span className="text-slate-500">Всего слов</span>
-            <span className="font-medium">{stats.totalWords}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-slate-500">На повторении</span>
-            <span className="font-medium">{stats.wordsInProgress}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-slate-500">Всего упражнений</span>
-            <span className="font-medium">{stats.totalExercises}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-slate-500">Правильных</span>
-            <span className="font-medium">{stats.correctExercises}</span>
-          </div>
-        </div>
-      </div>
-
       <button onClick={handleLogout} className="text-sm text-slate-400 text-center py-2">
-        Выйти
+        Выйти из аккаунта
       </button>
     </div>
   );
