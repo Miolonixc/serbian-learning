@@ -1,9 +1,7 @@
 import { useState, useEffect, Component, type ReactNode } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { onAuthStateChanged, type Unsubscribe } from 'firebase/auth';
-import { auth } from './firebase';
 import { seedDatabase } from './utils/seed';
-import { loadFromCloud } from './utils/sync';
+import { auth, firebaseReady } from './firebase';
 import Welcome from './components/Welcome';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -41,36 +39,35 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: string |
 export default function App() {
   const [ready, setReady] = useState(false);
   const [user, setUser] = useState<any>(null);
-  const [authReady, setAuthReady] = useState(false);
 
   useEffect(() => {
     seedDatabase().then(() => {
-      setReady(true);
+      if (firebaseReady) {
+        import('firebase/auth').then(({ onAuthStateChanged }) => {
+          onAuthStateChanged(auth, async (firebaseUser) => {
+            if (firebaseUser) {
+              try {
+                const { loadFromCloud } = await import('./utils/sync');
+                await loadFromCloud(firebaseUser.uid);
+              } catch (e) {
+                console.error('Cloud sync failed:', e);
+              }
+            }
+            setUser(firebaseUser);
+            setReady(true);
+          });
+        });
+      } else {
+        setUser(null);
+        setReady(true);
+      }
     }).catch((e) => {
       console.error('Seed failed:', e);
       setReady(true);
     });
   }, []);
 
-  useEffect(() => {
-    if (!ready) return;
-
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      if (firebaseUser) {
-        try {
-          await loadFromCloud(firebaseUser.uid);
-        } catch (e) {
-          console.error('Cloud sync failed:', e);
-        }
-      }
-      setUser(firebaseUser);
-      setAuthReady(true);
-    });
-
-    return () => unsubscribe();
-  }, [ready]);
-
-  if (!ready || !authReady) {
+  if (!ready) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="flex flex-col items-center gap-3">

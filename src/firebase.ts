@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
+import { getAuth, connectAuthEmulator } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -12,6 +12,18 @@ const firebaseConfig = {
   measurementId: "G-HB6LQ172S7"
 };
 
-export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+let app: any;
+let auth: any;
+let db: any;
+let firebaseReady = false;
+
+try {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getFirestore(app);
+  firebaseReady = true;
+} catch (e) {
+  console.error('Firebase init failed:', e);
+}
+
+export { auth, db, firebaseReady };
