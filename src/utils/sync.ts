@@ -19,7 +19,10 @@ interface UserData {
 export async function loadFromCloud(uid: string): Promise<boolean> {
   try {
     const snap = await getDoc(doc(firestore, 'users', uid));
-    if (!snap.exists()) return false;
+    if (!snap.exists()) {
+      console.log('No cloud data for user');
+      return false;
+    }
 
     const data = snap.data() as UserData;
 
@@ -64,6 +67,7 @@ export async function loadFromCloud(uid: string): Promise<boolean> {
       }
     });
 
+    console.log('Loaded data from cloud');
     return true;
   } catch (e) {
     console.error('Failed to load from cloud:', e);
@@ -114,6 +118,8 @@ export async function saveToCloud(uid: string): Promise<void> {
       exerciseResults,
       dailyStats,
     }, { merge: true });
+
+    console.log('Saved data to cloud');
   } catch (e) {
     console.error('Failed to save to cloud:', e);
   }

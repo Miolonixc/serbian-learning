@@ -23,11 +23,18 @@ export default function App() {
     seedDatabase().then(() => {
       unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
         if (firebaseUser) {
-          await loadFromCloud(firebaseUser.uid);
+          try {
+            await loadFromCloud(firebaseUser.uid);
+          } catch (e) {
+            console.error('Cloud sync failed:', e);
+          }
         }
         setUser(firebaseUser);
         setReady(true);
       });
+    }).catch((e) => {
+      console.error('Seed failed:', e);
+      setReady(true);
     });
 
     return () => {
