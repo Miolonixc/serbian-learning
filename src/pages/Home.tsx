@@ -5,6 +5,14 @@ import { useProgress } from '../hooks/useProgress';
 import WordCard from '../components/WordCard';
 import ProgressBar from '../components/ProgressBar';
 
+function getGreeting(): string {
+  const h = new Date().getHours();
+  if (h < 6) return 'Доброй ночи';
+  if (h < 12) return 'Доброе утро';
+  if (h < 18) return 'Добрый день';
+  return 'Добрый вечер';
+}
+
 export default function Home() {
   const { words, loading, markKnown, markLearning } = useDailyWords();
   const { stats, refresh: refreshStats, recordDailyStat } = useProgress();
@@ -140,12 +148,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
-
-function getGreeting(): string {
-  const h = new Date().getHours();
-  if (h < 6) return 'Доброй ночи';
-  if (h < 12) return 'Доброе утро';
-  if (h < 18) return 'Добрый день';
-  return 'Добрый вечер';
 }
