@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Component, type ReactNode } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { onAuthStateChanged, type Unsubscribe } from 'firebase/auth';
 import { auth } from './firebase';
@@ -12,6 +12,31 @@ import Grammar from './pages/Grammar';
 import GrammarLessonPage from './pages/GrammarLessonPage';
 import Exercises from './pages/Exercises';
 import Progress from './pages/Progress';
+
+class ErrorBoundary extends Component<{ children: ReactNode }, { error: string | null }> {
+  state = { error: null as string | null };
+
+  static getDerivedStateFromError(error: Error) {
+    return { error: error.message };
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4">
+          <div className="card max-w-md w-full">
+            <h2 className="text-lg font-bold text-red-600 mb-2">Ошибка</h2>
+            <p className="text-sm text-slate-600 mb-4">{this.state.error}</p>
+            <button onClick={() => window.location.reload()} className="btn-primary w-full">
+              Перезагрузить
+            </button>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 export default function App() {
   const [ready, setReady] = useState(false);
@@ -61,17 +86,19 @@ export default function App() {
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/vocabulary" element={<Vocabulary />} />
-          <Route path="/grammar" element={<Grammar />} />
-          <Route path="/grammar/:id" element={<GrammarLessonPage />} />
-          <Route path="/exercises" element={<Exercises />} />
-          <Route path="/progress" element={<Progress />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/vocabulary" element={<Vocabulary />} />
+            <Route path="/grammar" element={<Grammar />} />
+            <Route path="/grammar/:id" element={<GrammarLessonPage />} />
+            <Route path="/exercises" element={<Exercises />} />
+            <Route path="/progress" element={<Progress />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
