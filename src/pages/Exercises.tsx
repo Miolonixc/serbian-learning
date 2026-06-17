@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import Exercise, { type ExerciseData } from '../components/Exercise';
 import { useProgress } from '../hooks/useProgress';
 import { db } from '../db';
-import { auth } from '../firebase';
-import { scheduleSync } from '../utils/sync';
 import exercisesData from '../data/exercises.json';
 
 export default function Exercises() {
@@ -50,8 +48,6 @@ export default function Exercises() {
       exerciseId: exercise.id,
       correct: correctAnswer,
       date: new Date(),
-    }).then(() => {
-      if (auth.currentUser) scheduleSync(auth.currentUser.uid);
     });
 
     if (currentIndex + 1 >= allExercises.length) {

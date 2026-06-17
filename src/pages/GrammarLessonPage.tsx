@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { db } from '../db';
-import { auth } from '../firebase';
-import { scheduleSync } from '../utils/sync';
 import grammarData from '../data/grammar.json';
 
 interface GrammarLessonData {
@@ -36,7 +34,6 @@ export default function GrammarLessonPage() {
       completedAt: new Date(),
     });
     setCompleted(true);
-    if (auth.currentUser) scheduleSync(auth.currentUser.uid);
   };
 
   if (!lesson) {

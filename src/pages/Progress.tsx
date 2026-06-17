@@ -1,15 +1,12 @@
 import { useProgress } from '../hooks/useProgress';
-import { auth } from '../firebase';
-import { signOut } from 'firebase/auth';
 
 export default function Progress() {
   const { stats, loading } = useProgress();
-  const user = auth.currentUser;
-  const name = user?.displayName || user?.email?.split('@')[0] || 'Ученик';
+  const name = localStorage.getItem('userName') || 'Ученик';
 
-  const handleLogout = async () => {
-    if (confirm('Выйти из аккаунта?')) {
-      await signOut(auth);
+  const handleLogout = () => {
+    if (confirm('Выйти и очистить данные?')) {
+      localStorage.clear();
       window.location.reload();
     }
   };
@@ -35,13 +32,8 @@ export default function Progress() {
           </div>
           <div className="flex-1">
             <h1 className="text-lg font-bold">{name}</h1>
-            <p className="text-sm opacity-80">{user?.email}</p>
+            <p className="text-sm opacity-80">Серия: {stats.streak} дней</p>
           </div>
-        </div>
-        <div className="mt-3 flex items-center gap-2">
-          <span className="text-lg">🔥</span>
-          <span className="font-bold">{stats.streak}</span>
-          <span className="text-sm opacity-80">дней подряд</span>
         </div>
       </div>
 
@@ -99,7 +91,7 @@ export default function Progress() {
       </div>
 
       <button onClick={handleLogout} className="text-sm text-slate-400 text-center py-2">
-        Выйти из аккаунта
+        Выйти
       </button>
     </div>
   );

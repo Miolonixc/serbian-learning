@@ -1,7 +1,6 @@
-import { useState, useEffect, Component, type ReactNode } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { seedDatabase } from './utils/seed';
-import { auth, firebaseReady } from './firebase';
 import Welcome from './components/Welcome';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -11,56 +10,15 @@ import GrammarLessonPage from './pages/GrammarLessonPage';
 import Exercises from './pages/Exercises';
 import Progress from './pages/Progress';
 
-class ErrorBoundary extends Component<{ children: ReactNode }, { error: string | null }> {
-  state = { error: null as string | null };
-
-  static getDerivedStateFromError(error: Error) {
-    return { error: error.message };
-  }
-
-  render() {
-    if (this.state.error) {
-      return (
-        <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4">
-          <div className="card max-w-md w-full">
-            <h2 className="text-lg font-bold text-red-600 mb-2">Ошибка</h2>
-            <p className="text-sm text-slate-600 mb-4">{this.state.error}</p>
-            <button onClick={() => window.location.reload()} className="btn-primary w-full">
-              Перезагрузить
-            </button>
-          </div>
-        </div>
-      );
-    }
-    return this.props.children;
-  }
-}
-
 export default function App() {
   const [ready, setReady] = useState(false);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<string | null>(null);
 
   useEffect(() => {
     seedDatabase().then(() => {
-      if (firebaseReady) {
-        import('firebase/auth').then(({ onAuthStateChanged }) => {
-          onAuthStateChanged(auth, async (firebaseUser) => {
-            if (firebaseUser) {
-              try {
-                const { loadFromCloud } = await import('./utils/sync');
-                await loadFromCloud(firebaseUser.uid);
-              } catch (e) {
-                console.error('Cloud sync failed:', e);
-              }
-            }
-            setUser(firebaseUser);
-            setReady(true);
-          });
-        });
-      } else {
-        setUser(null);
-        setReady(true);
-      }
+      const saved = localStorage.getItem('userName');
+      if (saved) setUser(saved);
+      setReady(true);
     }).catch((e) => {
       console.error('Seed failed:', e);
       setReady(true);
@@ -79,23 +37,21 @@ export default function App() {
   }
 
   if (!user) {
-    return <Welcome />;
+    return <Welcome onComplete={(name) => setUser(name)} />;
   }
 
   return (
-    <ErrorBoundary>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/vocabulary" element={<Vocabulary />} />
-            <Route path="/grammar" element={<Grammar />} />
-            <Route path="/grammar/:id" element={<GrammarLessonPage />} />
-            <Route path="/exercises" element={<Exercises />} />
-            <Route path="/progress" element={<Progress />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </ErrorBoundary>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/vocabulary" element={<Vocabulary />} />
+          <Route path="/grammar" element={<Grammar />} />
+          <Route path="/grammar/:id" element={<GrammarLessonPage />} />
+          <Route path="/exercises" element={<Exercises />} />
+          <Route path="/progress" element={<Progress />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
