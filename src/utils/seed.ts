@@ -3,7 +3,7 @@ import type { Word } from '../db';
 import vocabularyData from '../data/vocabulary.json';
 
 const DB_VERSION_KEY = 'serbian_db_version';
-const CURRENT_VERSION = 1;
+const CURRENT_VERSION = 2;
 
 export async function seedDatabase(): Promise<void> {
   const storedVersion = localStorage.getItem(DB_VERSION_KEY);
