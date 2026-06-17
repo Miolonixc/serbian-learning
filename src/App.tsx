@@ -12,43 +12,27 @@ import Progress from './pages/Progress';
 
 export default function App() {
   const [ready, setReady] = useState(false);
-  const [user, setUser] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [userName, setUserName] = useState<string | null>(null);
 
   useEffect(() => {
-    seedDatabase()
-      .then(() => {
-        const saved = localStorage.getItem('userName');
-        if (saved) setUser(saved);
-        setReady(true);
-      })
-      .catch((e) => {
-        setError(String(e));
-        setReady(true);
-      });
+    seedDatabase().then(() => {
+      const saved = localStorage.getItem('userName');
+      setUserName(saved);
+      setReady(true);
+    }).catch(() => {
+      setReady(true);
+    });
   }, []);
 
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4">
-        <div className="card max-w-md w-full">
-          <h2 className="text-lg font-bold text-red-600 mb-2">Ошибка</h2>
-          <p className="text-sm text-slate-600">{error}</p>
-        </div>
-      </div>
-    );
-  }
-
   if (!ready) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="text-slate-400">Загрузка...</div>
-      </div>
-    );
+    return <div style={{padding:40,textAlign:'center'}}>Загрузка...</div>;
   }
 
-  if (!user) {
-    return <Welcome onComplete={(name) => setUser(name)} />;
+  if (!userName) {
+    return <Welcome onComplete={(name) => {
+      localStorage.setItem('userName', name);
+      setUserName(name);
+    }} />;
   }
 
   return (
