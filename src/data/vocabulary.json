@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "serbian": "здраво",
+    "serbianLatin": "zdravo",
+    "russian": "привет",
+    "category": "greetings",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "zdravo.mp3",
+    "examples": [
+      {"serbian": "Здраво, како си?", "russian": "Привет, как дела?"}
+    ]
+  },
+  {
+    "id": 2,
+    "serbian": "добар дан",
+    "serbianLatin": "dobar dan",
+    "russian": "добрый день",
+    "category": "greetings",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "dobar_dan.mp3",
+    "examples": [
+      {"serbian": "Добар дан, господине.", "russian": "Добрый день, господин."}
+    ]
+  },
+  {
+    "id": 3,
+    "serbian": "хвала",
+    "serbianLatin": "hvala",
+    "russian": "спасибо",
+    "category": "common",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "hvala.mp3",
+    "examples": [
+      {"serbian": "Хвала вам много.", "russian": "Большое спасибо вам."}
+    ]
+  },
+  {
+    "id": 4,
+    "serbian": "молим",
+    "serbianLatin": "molim",
+    "russian": "пожалуйста",
+    "category": "common",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "molim.mp3",
+    "examples": [
+      {"serbian": "Молим вас.", "russian": "Пожалуйста."}
+    ]
+  },
+  {
+    "id": 5,
+    "serbian": "извините",
+    "serbianLatin": "izvinite",
+    "russian": "извините",
+    "category": "common",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "izvinite.mp3",
+    "examples": [
+      {"serbian": "Извините, где је станица?", "russian": "Извините, где станция?"}
+    ]
+  },
+  {
+    "id": 6,
+    "serbian": "да",
+    "serbianLatin": "da",
+    "russian": "да",
+    "category": "common",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "da.mp3",
+    "examples": [
+      {"serbian": "Да, разумем.", "russian": "Да, понимаю."}
+    ]
+  },
+  {
+    "id": 7,
+    "serbian": "не",
+    "serbianLatin": "ne",
+    "russian": "нет",
+    "category": "common",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "ne.mp3",
+    "examples": [
+      {"serbian": "Не, хвала.", "russian": "Нет, спасибо."}
+    ]
+  },
+  {
+    "id": 8,
+    "serbian": "ја сам",
+    "serbianLatin": "ja sam",
+    "russian": "я",
+    "category": "pronouns",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "ja_sam.mp3",
+    "examples": [
+      {"serbian": "Ја сам Марко.", "russian": "Я Марко."}
+    ]
+  },
+  {
+    "id": 9,
+    "serbian": "ти си",
+    "serbianLatin": "ti si",
+    "russian": "ты",
+    "category": "pronouns",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "ti_si.mp3",
+    "examples": [
+      {"serbian": "Ти си лепа.", "russian": "Ты красивая."}
+    ]
+  },
+  {
+    "id": 10,
+    "serbian": "он",
+    "serbianLatin": "on",
+    "russian": "он",
+    "category": "pronouns",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "on.mp3",
+    "examples": [
+      {"serbian": "Он је доктор.", "russian": "Он врач."}
+    ]
+  },
+  {
+    "id": 11,
+    "serbian": "она",
+    "serbianLatin": "ona",
+    "russian": "она",
+    "category": "pronouns",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "ona.mp3",
+    "examples": [
+      {"serbian": "Она је учитељица.", "russian": "Она учительница."}
+    ]
+  },
+  {
+    "id": 12,
+    "serbian": "вода",
+    "serbianLatin": "voda",
+    "russian": "вода",
+    "category": "food",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "voda.mp3",
+    "examples": [
+      {"serbian": "Могу добити воду?", "russian": "Можно воды?"}
+    ]
+  },
+  {
+    "id": 13,
+    "serbian": "хлеб",
+    "serbianLatin": "hleb",
+    "russian": "хлеб",
+    "category": "food",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "hleb.mp3",
+    "examples": [
+      {"serbian": "Купио сам хлеб.", "russian": "Я купил хлеб."}
+    ]
+  },
+  {
+    "id": 14,
+    "serbian": "молоко",
+    "serbianLatin": "mleko",
+    "russian": "молоко",
+    "category": "food",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "mleko.mp3",
+    "examples": [
+      {"serbian": "Волим млијеко са шећером.", "russian": "Я люблю молоко с сахаром."}
+    ]
+  },
+  {
+    "id": 15,
+    "serbian": "риба",
+    "serbianLatin": "riba",
+    "russian": "рыба",
+    "category": "food",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "riba.mp3",
+    "examples": [
+      {"serbian": "Риба је свежа.", "russian": "Рыба свежая."}
+    ]
+  },
+  {
+    "id": 16,
+    "serbian": "месо",
+    "serbianLatin": "meso",
+    "russian": "мясо",
+    "category": "food",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "meso.mp3",
+    "examples": [
+      {"serbian": "Једемо месо за ручак.", "russian": "Мы едим мясо на обед."}
+    ]
+  },
+  {
+    "id": 17,
+    "serbian": "један",
+    "serbianLatin": "jedan",
+    "russian": "один",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "jedan.mp3",
+    "examples": [
+      {"serbian": "Имам један проблем.", "russian": "У меня одна проблема."}
+    ]
+  },
+  {
+    "id": 18,
+    "serbian": "два",
+    "serbianLatin": "dva",
+    "russian": "два",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "dva.mp3",
+    "examples": [
+      {"serbian": "Имам два брата.", "russian": "У меня два брата."}
+    ]
+  },
+  {
+    "id": 19,
+    "serbian": "три",
+    "serbianLatin": "tri",
+    "russian": "три",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "tri.mp3",
+    "examples": [
+      {"serbian": "Три сата.", "russian": "Три часа."}
+    ]
+  },
+  {
+    "id": 20,
+    "serbian": "четири",
+    "serbianLatin": "četiri",
+    "russian": "четыре",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "cetiri.mp3",
+    "examples": [
+      {"serbian": "Четири књиге.", "russian": "Четыре книги."}
+    ]
+  },
+  {
+    "id": 21,
+    "serbian": "пет",
+    "serbianLatin": "pet",
+    "russian": "пять",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "pet.mp3",
+    "examples": [
+      {"serbian": "Пет дана.", "russian": "Пять дней."}
+    ]
+  },
+  {
+    "id": 22,
+    "serbian": "шест",
+    "serbianLatin": "šest",
+    "russian": "шесть",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "sest.mp3",
+    "examples": [
+      {"serbian": "Шест месеци.", "russian": "Шесть месяцев."}
+    ]
+  },
+  {
+    "id": 23,
+    "serbian": "седам",
+    "serbianLatin": "sedam",
+    "russian": "семь",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "sedam.mp3",
+    "examples": [
+      {"serbian": "Седам дана у недељи.", "russian": "Семь дней в неделе."}
+    ]
+  },
+  {
+    "id": 24,
+    "serbian": "осам",
+    "serbianLatin": "osam",
+    "russian": "восемь",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "osam.mp3",
+    "examples": [
+      {"serbian": "Осам сати.", "russian": "Восемь часов."}
+    ]
+  },
+  {
+    "id": 25,
+    "serbian": "девет",
+    "serbianLatin": "devet",
+    "russian": "девять",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "devet.mp3",
+    "examples": [
+      {"serbian": "Деветнаест година.", "russian": "Девятнадцать лет."}
+    ]
+  },
+  {
+    "id": 26,
+    "serbian": "десет",
+    "serbianLatin": "deset",
+    "russian": "десять",
+    "category": "numbers",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "deset.mp3",
+    "examples": [
+      {"serbian": "Десет минута.", "russian": "Десять минут."}
+    ]
+  },
+  {
+    "id": 27,
+    "serbian": "мајка",
+    "serbianLatin": "majka",
+    "russian": "мама",
+    "category": "family",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "majka.mp3",
+    "examples": [
+      {"serbian": "Моја мајка је лепа.", "russian": "Моя мама красивая."}
+    ]
+  },
+  {
+    "id": 28,
+    "serbian": "отац",
+    "serbianLatin": "otac",
+    "russian": "отец",
+    "category": "family",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "otac.mp3",
+    "examples": [
+      {"serbian": "Мој отац ради.", "russian": "Мой отец работает."}
+    ]
+  },
+  {
+    "id": 29,
+    "serbian": "сестра",
+    "serbianLatin": "sestra",
+    "russian": "сестра",
+    "category": "family",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "sestra.mp3",
+    "examples": [
+      {"serbian": "Имам једну сестру.", "russian": "У меня одна сестра."}
+    ]
+  },
+  {
+    "id": 30,
+    "serbian": "брат",
+    "serbianLatin": "brat",
+    "russian": "брат",
+    "category": "family",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "brat.mp3",
+    "examples": [
+      {"serbian": "Мој брат је старији.", "russian": "Мой брат старше."}
+    ]
+  },
+  {
+    "id": 31,
+    "serbian": "дете",
+    "serbianLatin": "dete",
+    "russian": "ребёнок",
+    "category": "family",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "dete.mp3",
+    "examples": [
+      {"serbian": "Дете се игра.", "russian": "Ребёнок играет."}
+    ]
+  },
+  {
+    "id": 32,
+    "serbian": "кућа",
+    "serbianLatin": "kuća",
+    "russian": "дом",
+    "category": "home",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "kuca.mp3",
+    "examples": [
+      {"serbian": "Ово је моја кућа.", "russian": "Это мой дом."}
+    ]
+  },
+  {
+    "id": 33,
+    "serbian": "соба",
+    "serbianLatin": "soba",
+    "russian": "комната",
+    "category": "home",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "soba.mp3",
+    "examples": [
+      {"serbian": "Соба је велика.", "russian": "Комната большая."}
+    ]
+  },
+  {
+    "id": 34,
+    "serbian": "врата",
+    "serbianLatin": "vrata",
+    "russian": "дверь",
+    "category": "home",
+    "difficulty": 1,
+    "gender": "множественное",
+    "audio": "vrata.mp3",
+    "examples": [
+      {"serbian": "Затвори врата.", "russian": "Закрой дверь."}
+    ]
+  },
+  {
+    "id": 35,
+    "serbian": "прозор",
+    "serbianLatin": "prozor",
+    "russian": "окно",
+    "category": "home",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "prozor.mp3",
+    "examples": [
+      {"serbian": "Отвори прозор.", "russian": "Открой окно."}
+    ]
+  },
+  {
+    "id": 36,
+    "serbian": "столица",
+    "serbianLatin": "stolica",
+    "russian": "стул",
+    "category": "home",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "stolica.mp3",
+    "examples": [
+      {"serbian": "Седни на столицу.", "russian": "Сядь на стул."}
+    ]
+  },
+  {
+    "id": 37,
+    "serbian": "стол",
+    "serbianLatin": "sto",
+    "russian": "стол",
+    "category": "home",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "sto.mp3",
+    "examples": [
+      {"serbian": "Хлеб је на столу.", "russian": "Хлеб на столе."}
+    ]
+  },
+  {
+    "id": 38,
+    "serbian": "књига",
+    "serbianLatin": "knjiga",
+    "russian": "книга",
+    "category": "objects",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "knjiga.mp3",
+    "examples": [
+      {"serbian": "Читам књигу.", "russian": "Я читаю книгу."}
+    ]
+  },
+  {
+    "id": 39,
+    "serbian": "телефон",
+    "serbianLatin": "telefon",
+    "russian": "телефон",
+    "category": "objects",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "telefon.mp3",
+    "examples": [
+      {"serbian": "Где је мој телефон?", "russian": "Где мой телефон?"}
+    ]
+  },
+  {
+    "id": 40,
+    "serbian": "автобус",
+    "serbianLatin": "autobus",
+    "russian": "автобус",
+    "category": "transport",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "autobus.mp3",
+    "examples": [
+      {"serbian": "Автобус долази.", "russian": "Автобус подъезжает."}
+    ]
+  },
+  {
+    "id": 41,
+    "serbian": " воз",
+    "serbianLatin": "voz",
+    "russian": "поезд",
+    "category": "transport",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "voz.mp3",
+    "examples": [
+      {"serbian": "Воз полази у осам.", "russian": "Поезд отходит в восемь."}
+    ]
+  },
+  {
+    "id": 42,
+    "serbian": "авион",
+    "serbianLatin": "avion",
+    "russian": "самолёт",
+    "category": "transport",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "avion.mp3",
+    "examples": [
+      {"serbian": "Авион лети за Београд.", "russian": "Самолёт летит в Белград."}
+    ]
+  },
+  {
+    "id": 43,
+    "serbian": "кола",
+    "serbianLatin": "kola",
+    "russian": "машина",
+    "category": "transport",
+    "difficulty": 1,
+    "gender": "множественное",
+    "audio": "kola.mp3",
+    "examples": [
+      {"serbian": "Нова кола.", "russian": "Новая машина."}
+    ]
+  },
+  {
+    "id": 44,
+    "serbian": "јутро",
+    "serbianLatin": "jutro",
+    "russian": "утро",
+    "category": "time",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "jutro.mp3",
+    "examples": [
+      {"serbian": "Добро јутро!", "russian": "Доброе утро!"}
+    ]
+  },
+  {
+    "id": 45,
+    "serbian": "дан",
+    "serbianLatin": "dan",
+    "russian": "день",
+    "category": "time",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "dan.mp3",
+    "examples": [
+      {"serbian": "Леп дан.", "russian": "Красивый день."}
+    ]
+  },
+  {
+    "id": 46,
+    "serbian": "вече",
+    "serbianLatin": "veče",
+    "russian": "вечер",
+    "category": "time",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "vece.mp3",
+    "examples": [
+      {"serbian": "Добро вече!", "russian": "Добрый вечер!"}
+    ]
+  },
+  {
+    "id": 47,
+    "serbian": "ноћ",
+    "serbianLatin": "noć",
+    "russian": "ночь",
+    "category": "time",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "noc.mp3",
+    "examples": [
+      {"serbian": "Лаку ноћ!", "russian": "Спокойной ночи!"}
+    ]
+  },
+  {
+    "id": 48,
+    "serbian": "данас",
+    "serbianLatin": "danas",
+    "russian": "сегодня",
+    "category": "time",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "danas.mp3",
+    "examples": [
+      {"serbian": "Данас је лепо.", "russian": "Сегодня красиво."}
+    ]
+  },
+  {
+    "id": 49,
+    "serbian": "сутра",
+    "serbianLatin": "sutra",
+    "russian": "завтра",
+    "category": "time",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "sutra.mp3",
+    "examples": [
+      {"serbian": "Видимо се сутра.", "russian": "Увидимся завтра."}
+    ]
+  },
+  {
+    "id": 50,
+    "serbian": "јуче",
+    "serbianLatin": "juče",
+    "russian": "вчера",
+    "category": "time",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "juce.mp3",
+    "examples": [
+      {"serbian": "Јуче сам био код куће.", "russian": "Вчера я был дома."}
+    ]
+  },
+  {
+    "id": 51,
+    "serbian": "љубав",
+    "serbianLatin": "ljubav",
+    "russian": "любовь",
+    "category": "feelings",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "ljubav.mp3",
+    "examples": [
+      {"serbian": "Љубав је лепа.", "russian": "Любовь прекрасна."}
+    ]
+  },
+  {
+    "id": 52,
+    "serbian": "срећа",
+    "serbianLatin": "sreća",
+    "russian": "счастье",
+    "category": "feelings",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "sreca.mp3",
+    "examples": [
+      {"serbian": "Срећа је бити заједно.", "russian": "Счастье — быть вместе."}
+    ]
+  },
+  {
+    "id": 53,
+    "serbian": "љепота",
+    "serbianLatin": "lepota",
+    "russian": "красота",
+    "category": "feelings",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "lepota.mp3",
+    "examples": [
+      {"serbian": "Лепота природе.", "russian": "Красота природы."}
+    ]
+  },
+  {
+    "id": 54,
+    "serbian": "здравље",
+    "serbianLatin": "zdravlje",
+    "russian": "здоровье",
+    "category": "health",
+    "difficulty": 2,
+    "gender": "средний",
+    "audio": "zdravlje.mp3",
+    "examples": [
+      {"serbian": "Здравље је најважније.", "russian": "Здоровье — самое важное."}
+    ]
+  },
+  {
+    "id": 55,
+ "serbian": "болес",
+    "serbianLatin": "boles",
+    "russian": "болезнь",
+    "category": "health",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "boles.mp3",
+    "examples": [
+      {"serbian": "Болес је озбиљна.", "russian": "Болезнь серьёзная."}
+    ]
+  },
+  {
+    "id": 56,
+    "serbian": "болница",
+    "serbianLatin": "bolnica",
+    "russian": "больница",
+    "category": "health",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "bolnica.mp3",
+    "examples": [
+      {"serbian": "Болница је близу.", "russian": "Больница близко."}
+    ]
+  },
+  {
+    "id": 57,
+    "serbian": "доктор",
+    "serbianLatin": "doktor",
+    "russian": "врач",
+    "category": "health",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "doktor.mp3",
+    "examples": [
+      {"serbian": "Идем код доктора.", "russian": "Иду к врачу."}
+    ]
+  },
+  {
+    "id": 58,
+    "serbian": "љекар",
+    "serbianLatin": "ljekar",
+    "russian": "врач",
+    "category": "health",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "ljekar.mp3",
+    "examples": [
+      {"serbian": "Љекар ми је помогао.", "russian": "Врач мне помог."}
+    ]
+  },
+  {
+    "id": 59,
+    "serbian": "школа",
+    "serbianLatin": "škola",
+    "russian": "школа",
+    "category": "education",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "skola.mp3",
+    "examples": [
+      {"serbian": "Идем у школу.", "russian": "Я ходу в школу."}
+    ]
+  },
+  {
+    "id": 60,
+    "serbian": "учитељ",
+    "serbianLatin": "učitelj",
+    "russian": "учитель",
+    "category": "education",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "ucitelj.mp3",
+    "examples": [
+      {"serbian": "Учитељ је добар.", "russian": "Учитель хороший."}
+    ]
+  },
+  {
+    "id": 61,
+    "serbian": "ученик",
+    "serbianLatin": "učenik",
+    "russian": "ученик",
+    "category": "education",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "ucenik.mp3",
+    "examples": [
+      {"serbian": "Ученик учи.", "russian": "Ученик учится."}
+    ]
+  },
+  {
+    "id": 62,
+    "serbian": "друг",
+    "serbianLatin": "drug",
+    "russian": "друг",
+    "category": "people",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "drug.mp3",
+    "examples": [
+      {"serbian": "Он је мој друг.", "russian": "Он мой друг."}
+    ]
+  },
+  {
+    "id": 63,
+    "serbian": "пријатељ",
+    "serbianLatin": "prijatelj",
+    "russian": "друг (приятель)",
+    "category": "people",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "prijatelj.mp3",
+    "examples": [
+      {"serbian": "Пријатељ је увек ту.", "russian": "Друг всегда рядом."}
+    ]
+  },
+  {
+    "id": 64,
+    "serbian": "комшија",
+    "serbianLatin": "komšija",
+    "russian": "сосед",
+    "category": "people",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "komsija.mp3",
+    "examples": [
+      {"serbian": "Комшија ми је помогао.", "russian": "Сосед мне помог."}
+    ]
+  },
+  {
+    "id": 65,
+    "serbian": "жена",
+    "serbianLatin": "žena",
+    "russian": "жена",
+    "category": "family",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "zena.mp3",
+    "examples": [
+      {"serbian": "Моја жена је лепа.", "russian": "Моя жена красивая."}
+    ]
+  },
+  {
+    "id": 66,
+    "serbian": "мушкарац",
+    "serbianLatin": "muškarac",
+    "russian": "мужчина",
+    "category": "people",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "muskarac.mp3",
+    "examples": [
+      {"serbian": "Мушкарац ради.", "russian": "Мужчина работает."}
+    ]
+  },
+  {
+    "id": 67,
+    "serbian": "девојка",
+    "serbianLatin": "devojka",
+    "russian": "девушка",
+    "category": "people",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "devojka.mp3",
+    "examples": [
+      {"serbian": "Девојка је лепа.", "russian": "Девушка красивая."}
+    ]
+  },
+  {
+    "id": 68,
+    "serbian": "дечко",
+    "serbianLatin": "dečko",
+    "russian": "парень",
+    "category": "people",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "decko.mp3",
+    "examples": [
+      {"serbian": "Дечко је млад.", "russian": "Парень молодой."}
+    ]
+  },
+  {
+    "id": 69,
+    "serbian": "велики",
+    "serbianLatin": "veliki",
+    "russian": "большой",
+    "category": "adjectives",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "veliki.mp3",
+    "examples": [
+      {"serbian": "Велики град.", "russian": "Большой город."}
+    ]
+  },
+  {
+    "id": 70,
+    "serbian": "мали",
+    "serbianLatin": "mali",
+    "russian": "маленький",
+    "category": "adjectives",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "mali.mp3",
+    "examples": [
+      {"serbian": "Мали пас.", "russian": "Маленькая собака."}
+    ]
+  },
+  {
+    "id": 71,
+    "serbian": "леп",
+    "serbianLatin": "lep",
+    "russian": "красивый",
+    "category": "adjectives",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "lep.mp3",
+    "examples": [
+      {"serbian": "Леп дан.", "russian": "Красивый день."}
+    ]
+  },
+  {
+    "id": 72,
+    "serbian": "добар",
+    "serbianLatin": "dobar",
+    "russian": "хороший",
+    "category": "adjectives",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "dobar.mp3",
+    "examples": [
+      {"serbian": "Добар човек.", "russian": "Хороший человек."}
+    ]
+  },
+  {
+    "id": 73,
+    "serbian": "лош",
+    "serbianLatin": "loš",
+    "russian": "плохой",
+    "category": "adjectives",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "los.mp3",
+    "examples": [
+      {"serbian": "Лоше време.", "russian": "Плохая погода."}
+    ]
+  },
+  {
+    "id": 74,
+    "serbian": "брзо",
+    "serbianLatin": "brzo",
+    "russian": "быстро",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "brzo.mp3",
+    "examples": [
+      {"serbian": "Иди брзо.", "russian": "Иди быстро."}
+    ]
+  },
+  {
+    "id": 75,
+    "serbian": "полако",
+    "serbianLatin": "polako",
+    "russian": "медленно",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "polako.mp3",
+    "examples": [
+      {"serbian": "Иди полако.", "russian": "Иди медленно."}
+    ]
+  },
+  {
+    "id": 76,
+    "serbian": "овде",
+    "serbianLatin": "ovde",
+    "russian": "здесь",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "ovde.mp3",
+    "examples": [
+      {"serbian": "Ја сам овде.", "russian": "Я здесь."}
+    ]
+  },
+  {
+    "id": 77,
+    "serbian": "тамо",
+    "serbianLatin": "tamo",
+    "russian": "там",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "tamo.mp3",
+    "examples": [
+      {"serbian": "Иди тамо.", "russian": "Иди туда."}
+    ]
+  },
+  {
+    "id": 78,
+    "serbian": "сада",
+    "serbianLatin": "sada",
+    "russian": "сейчас",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "sada.mp3",
+    "examples": [
+      {"serbian": "Сада идем.", "russian": "Сейчас иду."}
+    ]
+  },
+  {
+    "id": 79,
+    "serbian": "касније",
+    "serbianLatin": "kasnije",
+    "russian": "позже",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "kasnije.mp3",
+    "examples": [
+      {"serbian": "Видимо се касније.", "russian": "Увидимся позже."}
+    ]
+  },
+  {
+    "id": 80,
+    "serbian": "раније",
+    "serbianLatin": "ranije",
+    "russian": "раньше",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "ranije.mp3",
+    "examples": [
+      {"serbian": "Раније сам био млађи.", "russian": "Раньше я был моложе."}
+    ]
+  },
+  {
+    "id": 81,
+    "serbian": "више",
+    "serbianLatin": "više",
+    "russian": "больше",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "vise.mp3",
+    "examples": [
+      {"serbian": "Више не живим ту.", "russian": "Больше не живу здесь."}
+    ]
+  },
+  {
+    "id": 82,
+    "serbian": "мање",
+    "serbianLatin": "manje",
+    "russian": "меньше",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "manje.mp3",
+    "examples": [
+      {"serbian": "Мање је више.", "russian": "Меньше — значит больше."}
+    ]
+  },
+  {
+    "id": 83,
+    "serbian": "много",
+    "serbianLatin": "mnogo",
+    "russian": "много",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "mnogo.mp3",
+    "examples": [
+      {"serbian": "Много хвала.", "russian": "Большое спасибо."}
+    ]
+  },
+  {
+    "id": 84,
+    "serbian": "мало",
+    "serbianLatin": "malo",
+    "russian": "мало",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "malo.mp3",
+    "examples": [
+      {"serbian": "Мало је тешко.", "russian": "Немного трудно."}
+    ]
+  },
+  {
+    "id": 85,
+    "serbian": "увек",
+    "serbianLatin": "uvek",
+    "russian": "всегда",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "uvek.mp3",
+    "examples": [
+      {"serbian": "Увек сам ту.", "russian": "Всегда здесь."}
+    ]
+  },
+  {
+    "id": 86,
+    "serbian": "никада",
+    "serbianLatin": "nikada",
+    "russian": "никогда",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "nikada.mp3",
+    "examples": [
+      {"serbian": "Никада нећу заборавити.", "russian": "Никогда не забуду."}
+    ]
+  },
+  {
+    "id": 87,
+    "serbian": "понекад",
+    "serbianLatin": "ponekad",
+    "russian": "иногда",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "ponekad.mp3",
+    "examples": [
+      {"serbian": "Понекад идем у шетњу.", "russian": "Иногда гуляю."}
+    ]
+  },
+  {
+    "id": 88,
+    "serbian": "често",
+    "serbianLatin": "često",
+    "russian": "часто",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "cesto.mp3",
+    "examples": [
+      {"serbian": "Често идем у биоскоп.", "russian": "Часто хожу в кино."}
+    ]
+  },
+  {
+    "id": 89,
+    "serbian": "reno",
+    "serbianLatin": "reno",
+    "russian": "рано",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "rano.mp3",
+    "examples": [
+      {"serbian": "Устајем рано.", "russian": "Встаю рано."}
+    ]
+  },
+  {
+    "id": 90,
+    "serbian": "касно",
+    "serbianLatin": "kasno",
+    "russian": "поздно",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "kasno.mp3",
+    "examples": [
+      {"serbian": "Касно је.", "russian": "Поздно."}
+    ]
+  },
+  {
+    "id": 91,
+    "serbian": "добро",
+    "serbianLatin": "dobro",
+    "russian": "хорошо",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "dobro.mp3",
+    "examples": [
+      {"serbian": "Како си? Добро.", "russian": "Как дела? Хорошо."}
+    ]
+  },
+  {
+    "id": 92,
+    "serbian": " лоше",
+    "serbianLatin": "loše",
+    "russian": "плохо",
+    "category": "adverbs",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "lose.mp3",
+    "examples": [
+      {"serbian": "Сећам се лоше.", "russian": "Плохо помню."}
+    ]
+  },
+  {
+    "id": 93,
+    "serbian": "јако",
+    "serbianLatin": "jako",
+    "russian": "очень",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "jako.mp3",
+    "examples": [
+      {"serbian": "Јако сам срећан.", "russian": "Очень рад."}
+    ]
+  },
+  {
+    "id": 94,
+    "serbian": "врло",
+    "serbianLatin": "vrlo",
+    "russian": "очень",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "vrlo.mp3",
+    "examples": [
+      {"serbian": "Врло лепо.", "russian": "Очень красиво."}
+    ]
+  },
+  {
+    "id": 95,
+    "serbian": "потпуно",
+    "serbianLatin": "potpuno",
+    "russian": "полностью",
+    "category": "adverbs",
+    "difficulty": 3,
+    "gender": null,
+    "audio": "potpuno.mp3",
+    "examples": [
+      {"serbian": "Потпуно се слажем.", "russian": "Полностью согласен."}
+    ]
+  },
+  {
+    "id": 96,
+    "serbian": "стварно",
+    "serbianLatin": "stvarno",
+    "russian": "действительно",
+    "category": "adverbs",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "stvarno.mp3",
+    "examples": [
+      {"serbian": "Стварно?!", "russian": "Действительно?!"}
+    ]
+  },
+  {
+    "id": 97,
+    "serbian": "жалим",
+    "serbianLatin": "žalim",
+    "russian": "жаль",
+    "category": "feelings",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "zalim.mp3",
+    "examples": [
+      {"serbian": "Жалим због тога.", "russian": "Мне жаль из-за этого."}
+    ]
+  },
+  {
+    "id": 98,
+    "serbian": "volim",
+    "serbianLatin": "volim",
+    "russian": "люблю",
+    "category": "feelings",
+    "difficulty": 1,
+    "gender": null,
+    "audio": "volim.mp3",
+    "examples": [
+      {"serbian": "Волим Србију.", "russian": "Люблю Сербию."}
+    ]
+  },
+  {
+    "id": 99,
+    "serbian": "мрзим",
+    "serbianLatin": "mrzim",
+    "russian": "ненавижу",
+    "category": "feelings",
+    "difficulty": 3,
+    "gender": null,
+    "audio": "mrzim.mp3",
+    "examples": [
+      {"serbian": "Не мрзим ништа.", "russian": "Ничего не ненавижу."}
+    ]
+  },
+  {
+    "id": 100,
+    "serbian": "бојим се",
+    "serbianLatin": "bojim se",
+    "russian": "боюсь",
+    "category": "feelings",
+    "difficulty": 2,
+    "gender": null,
+    "audio": "bojim_se.mp3",
+    "examples": [
+      {"serbian": "Не бојим се.", "russian": "Не боюсь."}
+    ]
+  }
+]

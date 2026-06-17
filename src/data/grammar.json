@@ -1,0 +1,186 @@
+[
+  {
+    "id": "nominativ",
+    "title": "Именительный падеж (Nominativ)",
+    "level": "A1",
+    "content": "Nominativ je osnovni padež kojim se označava subjekat rečenice. U srpskom jeziku, imenice u nominativu menjaju oblik u zavisnosti od roda.\n\nMuški rod: човек, град, дан\nŽenski rod: жена, књига, школа\nSrednji rod: дете, море, село\n\nMnožina:\nМушки: људи, градови, дана\nЖенски: жене, књиге, школе\nСредњи: деца, мора, села",
+    "rules": [
+      "Nominativ je osnovni oblik imenice",
+      "Koristi se za subjekat rečenice",
+      "Ne menjaju se pridevni pridruženi oblici u nominativu",
+      "Upitna reč KO? ŠTA? odgovara nominativom"
+    ],
+    "examples": [
+      {"serbian": "Човек ради.", "russian": "Человек работает."},
+      {"serbian": "Жена пева.", "russian": "Женщина поёт."},
+      {"serbian": "Дете се игра.", "russian": "Ребёнок играет."},
+      {"serbian": "Људи говоре.", "russian": "Люди говорят."}
+    ],
+    "miniExercises": [
+      {"question": "Какой падеж: Човек?", "answer": "Nominativ"},
+      {"question": "Какой падеж: Жену?", "answer": "Akuzativ"}
+    ]
+  },
+  {
+    "id": "genitiv",
+    "title": "Родительный падеж (Genitiv)",
+    "level": "A1",
+    "content": "Genitiv označava pripadnost ili poreklo. Odgovara na pitanja: KOGA? ČEGA?\n\nPrimjeri promena:\nМушки: човек → човека\nЖенски: жена → жене\nСредњи: дете → детета\n\nGenitiv se koristi sa predlozima: из, од, до, без, код.",
+    "rules": [
+      "Označava pripadnost: књига Марка (knjiga Marka)",
+      "Koristi se sa predlozima: из, од, до, без, код",
+      "Odgovara na pitanja: KOGA? ČEGA?",
+      "Često se koristi u rečenicama sa posedovanjem"
+    ],
+    "examples": [
+      {"serbian": "Књига Марка.", "russian": "Книга Марка."},
+      {"serbian": "Из града.", "russian": "Из города."},
+      {"serbian": "Од куће.", "russian": "От дома."},
+      {"serbian": "Без проблема.", "russian": "Без проблемы."}
+    ]
+  },
+  {
+    "id": "dativ",
+    "title": "Дательный падеж (Dativ)",
+    "level": "A1",
+    "content": "Dativ označava primaoca radnje ili lice kome je nešto namenjeno. Odgovara na pitanja: KOME? ČEMU?\n\nPrimjeri promena:\nМушки: човек → човеку\nЖенски: жена → жени\nСредњи: дете → детету\n\nDativ se koristi sa predlozima: ка, по, уз.",
+    "rules": [
+      "Označava primaoca: дајем књигу другу (dajem knjigu drugu)",
+      "Koristi se sa predlozima: ка, по, уз",
+      "Odgovara na pitanja: KOME? ČEMU?",
+      "Često se koristi sa glagolima dati, pokloniti, reći"
+    ],
+    "examples": [
+      {"serbian": "Дајем књигу пријатељу.", "russian": "Даю книгу другу."},
+      {"serbian": "Идем ка граду.", "russian": "Иду к городу."},
+      {"serbian": "Радим по плану.", "russian": "Работаю по плану."},
+      {"serbian": "Са срећом.", "russian": "Счастья (в значении «желаю удачи»)."}
+    ]
+  },
+  {
+    "id": "akuzativ",
+    "title": "Винительный падеж (Akuzativ)",
+    "level": "A1",
+    "content": "Akuzativ označava objekat radnje. Odgovara na pitanja: KOGA? ŠTA?\n\nPrimjeri promena:\nМушки: човек → човека (неки: човек)\nЖенски: жена → жену\nСредњи: дете → дете\n\nAkuzativ se koristi sa predlozima: за, кроз, у.",
+    "rules": [
+      "Označava objekat: видим човека (vidim čoveka)",
+      "Koristi se sa predlozima: за, кроз, у",
+      "Odgovara na pitanja: KOGA? ŠTA?",
+      "Glagoli videti, voleti, tražiti zahtevaju akuzativ"
+    ],
+    "examples": [
+      {"serbian": "Видим човека.", "russian": "Вижу человека."},
+      {"serbian": "Волим књиге.", "russian": "Люблю книги."},
+      {"serbian": "Идем кроз град.", "russian": "Иду через город."},
+      {"serbian": "За тебе.", "russian": "Для тебя."}
+    ]
+  },
+  {
+    "id": "glagoli-osnovni",
+    "title": "Основни глаголи (Osnovni glagoli)",
+    "level": "A1",
+    "content": "U srpskom jeziku, glagoli se menjaju po licima i vremenima. Osnovni oblik glagola je infinitiv.\n\nJa sam (biti) - Я есть\nTi si (biti) - Ты есть\nOn/Ona je (biti) - Он/Она есть\nMi smo (biti) - Мы есть\nVi ste (biti) - Вы есть\nOni su (biti) - Они есть\n\nRaditi (работать): radim, radiš, radi, radimo, radite, rade\nIći (идти): idem, ideš, ide, idemo, idete, idu\nGovoriti (говорить): govorim, govoriš, govori, govorimo, govorite, govore",
+    "rules": [
+      "Infinitiv završava se na -ти, -ћи, -ји",
+      "Lica: ја (1. л. једнине), ти (2. л. једнине), он/она/оно (3. л. једнине)",
+      "Ми (1. л. множине), ви (2. л. множине), они/оне (3. л. множине)",
+      "Sadašnje vreme: radim, radiš, radi, radimo, radite, rade"
+    ],
+    "examples": [
+      {"serbian": "Ја радим.", "russian": "Я работаю."},
+      {"serbian": "Ти причаш.", "russian": "Ты говоришь."},
+      {"serbian": "Он иде.", "russian": "Он идёт."},
+      {"serbian": "Ми учимо.", "russian": "Мы учимся."}
+    ]
+  },
+  {
+    "id": "brojevi",
+    "title": "Числительные (Brojevi)",
+    "level": "A1",
+    "content": "Srpski brojevi:\n\n1 - један (jedan)\n2 - два/dве (dva/dve)\n3 - три (tri)\n4 - четири (četiri)\n5 - пет (pet)\n6 - шест (šest)\n7 - седам (sedam)\n8 - осам (osam)\n9 - девет (devet)\n10 - десет (deset)\n\nДвадесать: 20 - двадесет\nТридцать: 30 - тридесет\nСто: 100 - сто\nТысяча: 1000 - хиљада",
+    "rules": [
+      "Број 2-4 у мушком роду: два, три, четири",
+      "Број 2-4 у женском роду: две, три, четири",
+      "Број 2-4 у средњем роду: два, три, четири",
+      "Број 5+: пет, шест, седам..."
+    ],
+    "examples": [
+      {"serbian": "Имам два брата.", "russian": "У меня два брата."},
+      {"serbian": "Три књиге.", "russian": "Три книги."},
+      {"serbian": "Пет дана.", "russian": "Пять дней."},
+      {"serbian": "Десет људи.", "russian": "Десять человек."}
+    ]
+  },
+  {
+    "id": "pridevi",
+    "title": "Прилагательные (Pridevi)",
+    "level": "A1",
+    "content": "Pridevi u srpskom jeziku se menjaju po rodu, broju i padežu.\n\nOsnovni oblici:\nМушки: добар, леп, већи, мањи\nЖенски: добра, лепа, већа, мања\nСредње: добро, лепо, веће, мање\n\nМножина:\nМушки: добри, лепи, већи, мањи\nЖенски: добре, лепе, веће, мање\nСредње: добра, лепа, већа, мања",
+    "rules": [
+      "Pridev se slaže sa imenicom u rodu, broju i padežu",
+      "Množina: добри (m.), добре (ž.), добра (s.)",
+      "Pridevi se često koriste u nominativu",
+      "Superlativ: најлепши (najlepši), најбољи (najbolji)"
+    ],
+    "examples": [
+      {"serbian": "Леп дан.", "russian": "Красивый день."},
+      {"serbian": "Лепа књига.", "russian": "Красивая книга."},
+      {"serbian": "Лепо време.", "russian": "Красивая погода."},
+      {"serbian": "Добри људи.", "russian": "Хорошие люди."}
+    ]
+  },
+  {
+    "id": "vreme",
+    "title": "Времена (Vremena)",
+    "level": "A1",
+    "content": "U srpskom jeziku postoje tri glavna vremena:\n\n1. Sadašnje (Настоящее): radim, govoriš, ide\n2. Prošlo (Прошедшее): radio sam, govorio si, išao je\n3. Buduće (Будущее): radiću, govoriti ćeš, ići će\n\nProšlo vreme:\nЈа сам радио (Я работал)\nТи си радио (Ты работал)\nОн је радио (Он работал)\nМи смо радили (Мы работали)\nВи сте радили (Вы работали)\nОни су радили (Они работали)",
+    "rules": [
+      "Sadašnje vreme: osnovna promena lica",
+      "Prošlo vreme: глагол + бити (у прошлом вемену)",
+      "Buduće vreme: глагол + ћу/ћеш/ће",
+      "Prošlo vreme se menja po rodu: радио (m.), радила (f.), радило (s.)"
+    ],
+    "examples": [
+      {"serbian": "Ја сам радио.", "russian": "Я работал."},
+      {"serbian": "Ти си говорила.", "russian": "Ты говорила."},
+      {"serbian": "Он је ишао.", "russian": "Он шёл."},
+      {"serbian": "Ми ћемо учити.", "russian": "Мы будем учиться."}
+    ]
+  },
+  {
+    "id": "pitanja",
+    "title": "Вопросительные слова (Pitanja)",
+    "level": "A1",
+    "content": "Учимо основна питања на српском:\n\nКо? (Ko?) - Кто? (для людей)\nШта? (Šta?) - Что? (для вещей)\nГде? (Gde?) - Где?\nКада? (Kada?) - Когда?\nЗашто? (Zašto?) - Почему?\nКако? (Kako?) - Как?\nКолико? (Koliko?) - Сколько?\nСа ким? (Sa kim?) - С кем?\nЗа кога? (Za koga?) - Для кого?",
+    "rules": [
+      "Ко? - само за људе (людей)",
+      "Шта? - за ствари и појмове (вещи и понятия)",
+      "Где? - за место (для места)",
+      "Када? - за време (для времени)"
+    ],
+    "examples": [
+      {"serbian": "Ко је то?", "russian": "Кто это?"},
+      {"serbian": "Шта радиш?", "russian": "Что делаешь?"},
+      {"serbian": "Где живиш?", "russian": "Где живёшь?"},
+      {"serbian": "Када долазиш?", "russian": "Когда приезжаешь?"}
+    ]
+  },
+  {
+    "id": "osnovne-recenice",
+    "title": "Основные фразы (Osnovne fraze)",
+    "level": "A1",
+    "content": "Корисне фразе за свакодневну комуникацију:\n\nЗдраво! - Привет!\nДобар дан! - Добрый день!\nДобро јутро! - Доброе утро!\nДобро вече! - Добрый вечер!\nЛаку ноћ! - Спокойной ночи!\nХвала! - Спасибо!\nМолим! - Пожалуйста!\nИзвините! - Извините!\nДа/Не - Да/Нет\nКако си? - Как дела?\nДобро, хвала. - Хорошо, спасибо.\nГде је...? - Где...?\nМолим... - Пожалуйста...\nКолико кошта? - Сколько стоит?",
+    "rules": [
+      "Употребляйте вежливыe формы: Молим, Извините",
+      "Здраво подходит для неформального общения",
+      "Добар дан - для формального общения",
+      "На вопрос Како си? отвечают Добро, хвала"
+    ],
+    "examples": [
+      {"serbian": "Здраво! Како си?", "russian": "Привет! Как дела?"},
+      {"serbian": "Молим, где је станица?", "russian": "Пожалуйста, где станция?"},
+      {"serbian": "Хвала вам!", "russian": "Спасибо вам!"},
+      {"serbian": "Извините, не разумем.", "russian": "Извините, не понимаю."}
+    ]
+  }
+]
