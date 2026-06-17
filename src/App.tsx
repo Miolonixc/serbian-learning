@@ -16,33 +16,36 @@ import Progress from './pages/Progress';
 export default function App() {
   const [ready, setReady] = useState(false);
   const [user, setUser] = useState<any>(null);
+  const [authReady, setAuthReady] = useState(false);
 
   useEffect(() => {
-    let unsubscribe: Unsubscribe | null = null;
-
     seedDatabase().then(() => {
-      unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-        if (firebaseUser) {
-          try {
-            await loadFromCloud(firebaseUser.uid);
-          } catch (e) {
-            console.error('Cloud sync failed:', e);
-          }
-        }
-        setUser(firebaseUser);
-        setReady(true);
-      });
+      setReady(true);
     }).catch((e) => {
       console.error('Seed failed:', e);
       setReady(true);
     });
-
-    return () => {
-      if (unsubscribe) unsubscribe();
-    };
   }, []);
 
-  if (!ready) {
+  useEffect(() => {
+    if (!ready) return;
+
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser) {
+        try {
+          await loadFromCloud(firebaseUser.uid);
+        } catch (e) {
+          console.error('Cloud sync failed:', e);
+        }
+      }
+      setUser(firebaseUser);
+      setAuthReady(true);
+    });
+
+    return () => unsubscribe();
+  }, [ready]);
+
+  if (!ready || !authReady) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="flex flex-col items-center gap-3">
@@ -54,7 +57,7 @@ export default function App() {
   }
 
   if (!user) {
-    return <Welcome onComplete={() => {}} />;
+    return <Welcome />;
   }
 
   return (

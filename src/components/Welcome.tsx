@@ -2,11 +2,7 @@ import { useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase';
 
-interface WelcomeProps {
-  onComplete: () => void;
-}
-
-export default function Welcome({ onComplete }: WelcomeProps) {
+export default function Welcome() {
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -26,7 +22,7 @@ export default function Welcome({ onComplete }: WelcomeProps) {
       } else {
         await signInWithEmailAndPassword(auth, email, password);
       }
-      onComplete();
+      // onAuthStateChanged в App.tsx подхватит пользователя
     } catch (err: any) {
       const code = err.code;
       if (code === 'auth/email-already-in-use') setError('Email уже зарегистрирован');
