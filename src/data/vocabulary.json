@@ -1298,5 +1298,655 @@
     "examples": [
       {"serbian": "Не бојим се.", "russian": "Не боюсь."}
     ]
+  },
+  {
+    "id": 101,
+    "serbian": "вода",
+    "serbianLatin": "voda",
+    "russian": "вода",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "voda.mp3",
+    "examples": [
+      {"serbian": "Вода је хладна.", "russian": "Вода холодная."}
+    ]
+  },
+  {
+    "id": 102,
+    "serbian": "ватра",
+    "serbianLatin": "vatra",
+    "russian": "огонь",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "vatra.mp3",
+    "examples": [
+      {"serbian": "Ватра гори.", "russian": "Огонь горит."}
+    ]
+  },
+  {
+    "id": 103,
+    "serbian": "земља",
+    "serbianLatin": "zemlja",
+    "russian": "земля",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "zemlja.mp3",
+    "examples": [
+      {"serbian": "Земља је мокра.", "russian": "Земля мокрая."}
+    ]
+  },
+  {
+    "id": 104,
+    "serbian": "небо",
+    "serbianLatin": "nebo",
+    "russian": "небо",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "nebo.mp3",
+    "examples": [
+      {"serbian": "Небо је плаво.", "russian": "Небо голубое."}
+    ]
+  },
+  {
+    "id": 105,
+    "serbian": "дрво",
+    "serbianLatin": "drvo",
+    "russian": "дерево",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "drvo.mp3",
+    "examples": [
+      {"serbian": "Дрво је велико.", "russian": "Дерево большое."}
+    ]
+  },
+  {
+    "id": 106,
+    "serbian": "цвет",
+    "serbianLatin": "cvet",
+    "russian": "цветок",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "cvet.mp3",
+    "examples": [
+      {"serbian": "Цвет је леп.", "russian": "Цветок красивый."}
+    ]
+  },
+  {
+    "id": 107,
+    "serbian": "киша",
+    "serbianLatin": "kiša",
+    "russian": "дождь",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "kisa.mp3",
+    "examples": [
+      {"serbian": "Киша пада.", "russian": "Идёт дождь."}
+    ]
+  },
+  {
+    "id": 108,
+    "serbian": "снег",
+    "serbianLatin": "sneg",
+    "russian": "снег",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "sneg.mp3",
+    "examples": [
+      {"serbian": "Снег пада.", "russian": "Идёт снег."}
+    ]
+  },
+  {
+    "id": 109,
+    "serbian": "ветар",
+    "serbianLatin": "vetar",
+    "russian": "ветер",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "vetar.mp3",
+    "examples": [
+      {"serbian": "Ветар дува.", "russian": "Ветер дует."}
+    ]
+  },
+  {
+    "id": 110,
+    "serbian": "сонце",
+    "serbianLatin": "sunce",
+    "russian": "солнце",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "sunce.mp3",
+    "examples": [
+      {"serbian": "Сонце сија.", "russian": "Солнце светит."}
+    ]
+  },
+  {
+    "id": 111,
+    "serbian": "месец",
+    "serbianLatin": "mesec",
+    "russian": "луна",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "mesec.mp3",
+    "examples": [
+      {"serbian": "Месец је пун.", "russian": "Луна полная."}
+    ]
+  },
+  {
+    "id": 112,
+    "serbian": "звезда",
+    "serbianLatin": "zvezda",
+    "russian": "звезда",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "zvezda.mp3",
+    "examples": [
+      {"serbian": "Звезде сијају.", "russian": "Звёзды светят."}
+    ]
+  },
+  {
+    "id": 113,
+    "serbian": "море",
+    "serbianLatin": "more",
+    "russian": "море",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "more.mp3",
+    "examples": [
+      {"serbian": "Море је топло.", "russian": "Море тёплое."}
+    ]
+  },
+  {
+    "id": 114,
+    "serbian": "планина",
+    "serbianLatin": "planina",
+    "russian": "гора",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "planina.mp3",
+    "examples": [
+      {"serbian": "Планина је висока.", "russian": "Гора высокая."}
+    ]
+  },
+  {
+    "id": 115,
+    "serbian": "река",
+    "serbianLatin": "reka",
+    "russian": "река",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "reka.mp3",
+    "examples": [
+      {"serbian": "Река је дуга.", "russian": "Река длинная."}
+    ]
+  },
+  {
+    "id": 116,
+    "serbian": "језеро",
+    "serbianLatin": "jezero",
+    "russian": "озеро",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "jezero.mp3",
+    "examples": [
+      {"serbian": "Језеро је мирно.", "russian": "Озеро спокойное."}
+    ]
+  },
+  {
+    "id": 117,
+    "serbian": "шума",
+    "serbianLatin": "šuma",
+    "russian": "лес",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "suma.mp3",
+    "examples": [
+      {"serbian": "Шума је густа.", "russian": "Лес густой."}
+    ]
+  },
+  {
+    "id": 118,
+    "serbian": "облак",
+    "serbianLatin": "oblak",
+    "russian": "облако",
+    "category": "nature",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "oblak.mp3",
+    "examples": [
+      {"serbian": "Облак је бел.", "russian": "Облако белое."}
+    ]
+  },
+  {
+    "id": 119,
+    "serbian": "лука",
+    "serbianLatin": "luka",
+    "russian": "гавань",
+    "category": "nature",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "luka.mp3",
+    "examples": [
+      {"serbian": "Лука је велика.", "russian": "Гавань большая."}
+    ]
+  },
+  {
+    "id": 120,
+    "serbian": "острво",
+    "serbianLatin": "ostrvo",
+    "russian": "остров",
+    "category": "nature",
+    "difficulty": 2,
+    "gender": "средний",
+    "audio": "ostrvo.mp3",
+    "examples": [
+      {"serbian": "Острво је лепо.", "russian": "Остров красивый."}
+    ]
+  },
+  {
+    "id": 121,
+    "serbian": "рад",
+    "serbianLatin": "rad",
+    "russian": "работа",
+    "category": "work",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "rad.mp3",
+    "examples": [
+      {"serbian": "Рад је тежак.", "russian": "Работа тяжёлая."}
+    ]
+  },
+  {
+    "id": 122,
+    "serbian": "уред",
+    "serbianLatin": "ured",
+    "russian": "офис",
+    "category": "work",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "ured.mp3",
+    "examples": [
+      {"serbian": "Уред је чист.", "russian": "Офис чистый."}
+    ]
+  },
+  {
+    "id": 123,
+    "serbian": "сast",
+    "serbianLatin": "sastanak",
+    "russian": "встреча",
+    "category": "work",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "sastanak.mp3",
+    "examples": [
+      {"serbian": "Састанак је у десет.", "russian": "Встреча в десять."}
+    ]
+  },
+  {
+    "id": 124,
+    "serbian": "пројекат",
+    "serbianLatin": "projekat",
+    "russian": "проект",
+    "category": "work",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "projekat.mp3",
+    "examples": [
+      {"serbian": "Пројекат је завршен.", "russian": "Проект завершён."}
+    ]
+  },
+  {
+    "id": 125,
+    "serbian": "задатак",
+    "serbianLatin": "zadatak",
+    "russian": "задание",
+    "category": "work",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "zadatak.mp3",
+    "examples": [
+      {"serbian": "Задатак је лак.", "russian": "Задание лёгкое."}
+    ]
+  },
+  {
+    "id": 126,
+    "serbian": "платеж",
+    "serbianLatin": "plaća",
+    "russian": "зарплата",
+    "category": "work",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "placa.mp3",
+    "examples": [
+      {"serbian": "Плата је добра.", "russian": "Зарплата хорошая."}
+    ]
+  },
+  {
+    "id": 127,
+    "serbian": "колега",
+    "serbianLatin": "kolega",
+    "russian": "коллега",
+    "category": "work",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "kolega.mp3",
+    "examples": [
+      {"serbian": "Мој колега је добар.", "russian": "Мой коллега хороший."}
+    ]
+  },
+  {
+    "id": 128,
+    "serbian": "шefe",
+    "serbianLatin": "šef",
+    "russian": "начальник",
+    "category": "work",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "sef.mp3",
+    "examples": [
+      {"serbian": "Шеф је строг.", "russian": "Начальник строгий."}
+    ]
+  },
+  {
+    "id": 129,
+    "serbian": "сast",
+    "serbianLatin": "sastanak",
+    "russian": "совещание",
+    "category": "work",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "sastanak2.mp3",
+    "examples": [
+      {"serbian": "Састанак траје два сата.", "russian": "Совещание длится два часа."}
+    ]
+  },
+  {
+    "id": 130,
+    "serbian": "уговор",
+    "serbianLatin": "ugovor",
+    "russian": "договор",
+    "category": "work",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "ugovor.mp3",
+    "examples": [
+      {"serbian": "Уговор је потписан.", "russian": "Договор подписан."}
+    ]
+  },
+  {
+    "id": 131,
+    "serbian": "нос",
+    "serbianLatin": "nos",
+    "russian": "нос",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "nos.mp3",
+    "examples": [
+      {"serbian": "Нос је велики.", "russian": "Нос большой."}
+    ]
+  },
+  {
+    "id": 132,
+    "serbian": "уста",
+    "serbianLatin": "usta",
+    "russian": "рот",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "множественное",
+    "audio": "usta.mp3",
+    "examples": [
+      {"serbian": "Уста су мала.", "russian": "Рот маленький."}
+    ]
+  },
+  {
+    "id": 133,
+    "serbian": "ухо",
+    "serbianLatin": "uho",
+    "russian": "ухо",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "uho.mp3",
+    "examples": [
+      {"serbian": "Ухо боли.", "russian": "Ухо болит."}
+    ]
+  },
+  {
+    "id": 134,
+    "serbian": "око",
+    "serbianLatin": "oko",
+    "russian": "глаз",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "oko.mp3",
+    "examples": [
+      {"serbian": "Око је плаво.", "russian": "Глаз голубой."}
+    ]
+  },
+  {
+    "id": 135,
+    "serbian": "рука",
+    "serbianLatin": "ruka",
+    "russian": "рука",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "ruka.mp3",
+    "examples": [
+      {"serbian": "Рука је јака.", "russian": "Рука сильная."}
+    ]
+  },
+  {
+    "id": 136,
+    "serbian": "нога",
+    "serbianLatin": "noga",
+    "russian": "нога",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "noga.mp3",
+    "examples": [
+      {"serbian": "Нога је дуга.", "russian": "Нога длинная."}
+    ]
+  },
+  {
+    "id": 137,
+    "serbian": "глава",
+    "serbianLatin": "glava",
+    "russian": "голова",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "glava.mp3",
+    "examples": [
+      {"serbian": "Глава боли.", "russian": "Голова болит."}
+    ]
+  },
+  {
+    "id": 138,
+    "serbian": "срце",
+    "serbianLatin": "srce",
+    "russian": "сердце",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "srce.mp3",
+    "examples": [
+      {"serbian": "Срце куца.", "russian": "Сердце стучит."}
+    ]
+  },
+  {
+    "id": 139,
+    "serbian": "прсти",
+    "serbianLatin": "prsti",
+    "russian": "пальцы",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "множественное",
+    "audio": "prsti.mp3",
+    "examples": [
+      {"serbian": "Прсти су кратки.", "russian": "Пальцы короткие."}
+    ]
+  },
+  {
+    "id": 140,
+    "serbian": "леда",
+    "serbianLatin": "leđa",
+    "russian": "спина",
+    "category": "body",
+    "difficulty": 2,
+    "gender": "множественное",
+    "audio": "ledja.mp3",
+    "examples": [
+      {"serbian": "Леђа боле.", "russian": "Спина болит."}
+    ]
+  },
+  {
+    "id": 141,
+    "serbian": "стомак",
+    "serbianLatin": "stomak",
+    "russian": "живот",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "stomak.mp3",
+    "examples": [
+      {"serbian": "Стомак је пун.", "russian": "Живот полный."}
+    ]
+  },
+  {
+    "id": 142,
+    "serbian": "раме",
+    "serbianLatin": "rame",
+    "russian": "плечо",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "rame.mp3",
+    "examples": [
+      {"serbian": "Раме је широко.", "russian": "Плечо широкое."}
+    ]
+  },
+  {
+    "id": 143,
+    "serbian": "лице",
+    "serbianLatin": "lice",
+    "russian": "лицо",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "средний",
+    "audio": "lice.mp3",
+    "examples": [
+      {"serbian": "Лице је лепо.", "russian": "Лицо красивое."}
+    ]
+  },
+  {
+    "id": 144,
+    "serbian": "коса",
+    "serbianLatin": "kosa",
+    "russian": "волосы",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "женский",
+    "audio": "kosa.mp3",
+    "examples": [
+      {"serbian": "Коса је дуга.", "russian": "Волосы длинные."}
+    ]
+  },
+  {
+    "id": 145,
+    "serbian": "зуб",
+    "serbianLatin": "zub",
+    "russian": "зуб",
+    "category": "body",
+    "difficulty": 1,
+    "gender": "мужской",
+    "audio": "zub.mp3",
+    "examples": [
+      {"serbian": "Зуб боли.", "russian": "Зуб болит."}
+    ]
+  },
+  {
+    "id": 146,
+    "serbian": "ћутање",
+    "serbianLatin": "ćutanje",
+    "russian": "молчание",
+    "category": "abstract",
+    "difficulty": 2,
+    "gender": "средний",
+    "audio": "cutanje.mp3",
+    "examples": [
+      {"serbian": "Ћутање је злато.", "russian": "Молчание — золото."}
+    ]
+  },
+  {
+    "id": 147,
+    "serbian": "тишина",
+    "serbianLatin": "tišina",
+    "russian": "тишина",
+    "category": "abstract",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "tisina.mp3",
+    "examples": [
+      {"serbian": "Тишина је у соби.", "russian": "Тишина в комнате."}
+    ]
+  },
+  {
+    "id": 148,
+    "serbian": "бука",
+    "serbianLatin": "buka",
+    "russian": "шум",
+    "category": "abstract",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "buka.mp3",
+    "examples": [
+      {"serbian": "Бука је велика.", "russian": "Шум большой."}
+    ]
+  },
+  {
+    "id": 149,
+    "serbian": "мрак",
+    "serbianLatin": "mrak",
+    "russian": "тьма",
+    "category": "abstract",
+    "difficulty": 2,
+    "gender": "мужской",
+    "audio": "mrak.mp3",
+    "examples": [
+      {"serbian": "Мрак је густ.", "russian": "Тьма густая."}
+    ]
+  },
+  {
+    "id": 150,
+    "serbian": "светлост",
+    "serbianLatin": "svetlost",
+    "russian": "свет",
+    "category": "abstract",
+    "difficulty": 2,
+    "gender": "женский",
+    "audio": "svetlost.mp3",
+    "examples": [
+      {"serbian": "Светлост је лепа.", "russian": "Свет красивый."}
+    ]
   }
 ]
