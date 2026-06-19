@@ -19,15 +19,14 @@ export default function Home() {
 
   const name = localStorage.getItem('userName') || 'Ученик';
   const greeting = getGreeting();
-  const accuracy = stats.totalExercises > 0
-    ? Math.round((stats.correctExercises / stats.totalExercises) * 100)
-    : 0;
+  const accuracy =
+    stats.totalExercises > 0
+      ? Math.round((stats.correctExercises / stats.totalExercises) * 100)
+      : 0;
 
-  const currentIndex = words.findIndex((_, i) => {
-    const completed = parseInt(localStorage.getItem('dailyProgress') || '0', 10);
-    return i >= completed;
-  });
-  const effectiveIndex = currentIndex === -1 ? words.length : currentIndex;
+  const completed = parseInt(localStorage.getItem('dailyProgress') || '0', 10);
+  const effectiveIndex = Math.min(completed, words.length);
+  const isFinished = effectiveIndex >= words.length;
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
@@ -40,20 +39,18 @@ export default function Home() {
 
   const handleKnown = async () => {
     const word = words[effectiveIndex];
-    if (!word || !word.id) return;
+    if (!word?.id) return;
     await markKnown(word.id);
     await recordDailyStat('words');
-    const next = effectiveIndex + 1;
-    localStorage.setItem('dailyProgress', String(next));
+    localStorage.setItem('dailyProgress', String(effectiveIndex + 1));
     refreshStats();
   };
 
   const handleLearning = async () => {
     const word = words[effectiveIndex];
-    if (!word || !word.id) return;
+    if (!word?.id) return;
     await markLearning(word.id);
-    const next = effectiveIndex + 1;
-    localStorage.setItem('dailyProgress', String(next));
+    localStorage.setItem('dailyProgress', String(effectiveIndex + 1));
   };
 
   if (loading) {
@@ -73,9 +70,6 @@ export default function Home() {
     );
   }
 
-  const completed = effectiveIndex;
-  const isFinished = completed >= words.length;
-
   return (
     <div className="flex flex-col gap-4">
       <div className="bg-gradient-to-br from-serbia-blue to-primary-700 rounded-2xl p-5 text-white">
@@ -91,10 +85,14 @@ export default function Home() {
             <div className="w-full h-1.5 bg-white/20 rounded-full overflow-hidden">
               <div
                 className="h-full bg-white rounded-full transition-all"
-                style={{ width: `${Math.min((stats.todayWordsLearned / 8) * 100, 100)}%` }}
+                style={{
+                  width: `${Math.min((stats.todayWordsLearned / 8) * 100, 100)}%`,
+                }}
               />
             </div>
-            <p className="text-xs opacity-70 mt-1">{stats.todayWordsLearned}/8 слов сегодня</p>
+            <p className="text-xs opacity-70 mt-1">
+              {stats.todayWordsLearned}/8 слов сегодня
+            </p>
           </div>
         </div>
       </div>
@@ -102,10 +100,18 @@ export default function Home() {
       {!isFinished ? (
         <>
           <div className="flex items-center justify-between text-sm text-slate-500">
-            <span>Слово {completed + 1} из {words.length}</span>
-            <span>{Math.round((completed / words.length) * 100)}%</span>
+            <span>
+              Слово {effectiveIndex + 1} из {words.length}
+            </span>
+            <span>
+              {Math.round((effectiveIndex / words.length) * 100)}%
+            </span>
           </div>
-          <ProgressBar current={completed} total={words.length} showLabel={false} />
+          <ProgressBar
+            current={effectiveIndex}
+            total={words.length}
+            showLabel={false}
+          />
           <WordCard
             word={words[effectiveIndex]}
             onKnown={handleKnown}
@@ -133,15 +139,28 @@ export default function Home() {
       )}
 
       <div className="grid grid-cols-3 gap-2">
-        <Link to="/vocabulary" className="card flex flex-col items-center gap-1 py-3">
+        <Link
+          to="/vocabulary"
+          className="card flex flex-col items-center gap-1 py-3"
+        >
           <span className="text-xl">📖</span>
-          <span className="text-xs text-slate-500">{stats.learnedWords} слов</span>
+          <span className="text-xs text-slate-500">
+            {stats.learnedWords} слов
+          </span>
         </Link>
-        <Link to="/grammar" className="card flex flex-col items-center gap-1 py-3">
+        <Link
+          to="/grammar"
+          className="card flex flex-col items-center gap-1 py-3"
+        >
           <span className="text-xl">📝</span>
-          <span className="text-xs text-slate-500">{stats.lessonsCompleted} уроков</span>
+          <span className="text-xs text-slate-500">
+            {stats.lessonsCompleted} уроков
+          </span>
         </Link>
-        <Link to="/exercises" className="card flex flex-col items-center gap-1 py-3">
+        <Link
+          to="/exercises"
+          className="card flex flex-col items-center gap-1 py-3"
+        >
           <span className="text-xl">✏️</span>
           <span className="text-xs text-slate-500">{accuracy}% точность</span>
         </Link>
